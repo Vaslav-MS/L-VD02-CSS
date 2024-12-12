@@ -2,9 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточки пользователей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 240px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .card p {
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-
+    <div class="card">
+        <img src="ivan.jpg" alt="Фото Иван Иванов">
+        <h3>Иван Иванов</h3>
+        <p>Email: ivan@example.com</p>
+        <p>Дата рождения: 10.05.1985</p>
+        <p>Город: Москва</p>
+    </div>
+    <div class="card">
+        <img src="olga.jpg" alt="Фото Ольга Смирнова">
+        <h3>Ольга Смирнова</h3>
+        <p>Email: olga@example.com</p>
+        <p>Дата рождения: 22.07.1990</p>
+        <p>Город: Санкт-Петербург</p>
+    </div>
+    <div class="card">
+        <img src="petr.jpg" alt="Фото Пётр Петров">
+        <h3>Пётр Петров</h3>
+        <p>Email: petr@example.com</p>
+        <p>Дата рождения: 15.03.1982</p>
+        <p>Город: Новосибирск</p>
+    </div>
+    <div class="card">
+        <img src="anna.jpg" alt="Фото Анна Кузнецова">
+        <h3>Анна Кузнецова</h3>
+        <p>Email: anna@example.com</p>
+        <p>Дата рождения: 30.11.1995</p>
+        <p>Город: Казань</p>
+    </div>
 </body>
 </html>
